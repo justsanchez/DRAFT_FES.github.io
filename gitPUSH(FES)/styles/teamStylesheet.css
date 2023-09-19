@@ -1,0 +1,380 @@
+/*Stylesheet for the Meet Our Team Tab*/
+/*Credit for background animation: @designtorch2020 codepen*/
+/*Credit for glass-morphism card: @designtorch2020 codepen*/
+
+
+/*choose a good font for website*/
+
+
+
+.container h4{
+        /*border: solid red;*/
+
+    margin: 10px 0 0 30px ;
+      /*margin: 0 auto; !* Horizontal centering *!*/
+
+    width: min(100%,1200px);
+
+    font-size: 350%;
+
+
+}
+
+.card-container{
+    /*border: solid red;*/
+
+    /*shrinks border*/
+
+    /*border: solid red;*/
+    width: min(100%,1200px);
+    /*padding: 20px;*/
+    /*min-height: 50vh;*/
+    /*background-color: #0E315C;*/
+
+
+    display: flex;
+    /*grid-gap: 100px;*/
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  margin: 0 auto; /* Horizontal centering */
+
+
+    /*a good setting is 50px*/
+    gap: 50px; !important;
+}
+
+
+.card{
+
+    /*edit the gap between the pictures*/
+    margin: 32px; !important;
+
+    /*you can add a small border here using padding*/
+    /*padding: 5px;*/
+
+    width: 300px;
+    /*background-color: rgb(0,0,0,0.5);*/
+    /*box-shadow: 0 5px 20px rgba(0,0,0,0.05);*/
+
+    /*this controls the color of the card*/
+    background: radial-gradient(
+      140% 140% at 0% 0%,
+
+      rgba(255, 255, 255, 0.2) 1%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    /*these two make it have a glass look appearance*/
+    /*border-top: 1px solid #eeeded70;*/
+    border-left: 1px solid #eeeded70;
+    border-radius: 35px;
+    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(30px);
+
+}
+
+
+.card img{
+    /*make the img smaller to fit card*/
+    /*margin: 10px 0 0 0;*/
+    border-radius: 30px; /* Adjust the value to control the level of smoothness */
+
+    max-width: 100%;
+    max-height: 100%;
+    /*width: auto;*/
+    /*height: auto;*/
+
+    /*temporary, just find a specific format size and stick with it */
+    /*this is what makes the img stretched alittle*/
+    width: 400px; /* Set the width to 300 pixels */
+    height: 350px; /* Set the height to 200 pixels */
+}
+
+.card-info{
+    padding:0;
+    margin: 0;
+    text-align: center;
+
+}
+
+.card-info h6{
+    margin: 3px 0 0 0;
+    /*margin-bottom: 3px;*/
+    font-size: 16px;
+    font-weight: 700;
+    /*Raleway*/
+    font-family: sans-serif;
+    /*can take off*/
+    text-transform: capitalize;
+}
+
+.card-info span{
+
+    /*margin-bottom: 5px;*/
+    color: #4169E1;
+    font-size: 13px;
+    font-weight: 400;
+    /*Poppins*/
+    font-family: sans-serif;
+
+}
+
+
+/*
+possible grid template
+(for e-board)
+https://www.youtube.com/watch?v=78aWIBhVqoU
+(more grid templates)
+https://www.youtube.com/watch?v=rnhoY5Cdmy0
+*/
+
+
+/*Future problems:
+- figure out how to have them in the exact same size */
+
+/*Animated background*/
+
+/*.structure::before{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 50%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 -150px 400px #000044;*/
+/*  position: fixed;*/
+/*  bottom: -50%;*/
+/*  left: 25%;*/
+/*  z-index: -1;*/
+/*}*/
+
+/*.structure::after{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 50%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 150px 300px #000044;*/
+/*  position: fixed;*/
+/*  top: -50%;*/
+/*  left: 25%;*/
+/*  z-index: -1;*/
+/*  animation: animate_1 10s infinite;*/
+/*}*/
+
+/*.container::before{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 100%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 0 500px 450px #000000;*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: -50%;*/
+/*  z-index: -1;*/
+/*  animation: animate_2 10s infinite;*/
+/*}*/
+
+/*.container::after{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 100%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 0 500px 450px #000000;*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  right: -50%;*/
+/*  z-index: -1;*/
+/*  animation: animate_3 10s infinite;*/
+/*}*/
+
+/*!* Let's Create Animation *!*/
+/*@keyframes animate_1{*/
+/*  25%{*/
+/*    box-shadow: 0 150px 300px #000044;*/
+/*  }*/
+/*  50%{*/
+/*    box-shadow: 0 150px 300px #000000;*/
+/*  }*/
+/*  75%{*/
+/*    box-shadow: 0 150px 300px #000000;*/
+/*  }*/
+/*  100%{*/
+/*    box-shadow: 0 150px 300px #000044;*/
+/*  }*/
+/*}*/
+
+/*@keyframes animate_2{*/
+/*  25%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  50%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  75%{*/
+/*    box-shadow: 0 0 500px 450px #000044;*/
+/*  }*/
+/*  100%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*}*/
+
+/*@keyframes animate_3{*/
+/*  25%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  50%{*/
+/*    box-shadow: 0 0 500px 450px #000044;*/
+/*  }*/
+/*  75%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  100%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*}*/
+
+/*end of Animated background settings*/
+
+
+/*start of first modal attempt*/
+
+/*.modal{*/
+/*    !*to follow the user always *!*/
+
+/*    position: fixed;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%) scale(0);*/
+/*    transition: 200ms ease-in-out;*/
+/*    border: 1px solid black;*/
+/*    border-radius: 10px;*/
+/*    color: black;*/
+/*    z-index: 10;*/
+/*    background-color: white;*/
+/*    padding: 80% 80%; !* Adjust the percentages as needed *!*/
+/*    width: 500px;*/
+/*    max-width: 80%;*/
+/*}*/
+
+/*.modal.active{*/
+/*    transform: translate(-50%, -50%) scale(1);*/
+
+/*}*/
+
+/*.modal-header{*/
+/*    padding: 10px 15px;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    border-bottom: 1px solid black;*/
+
+/*}*/
+
+/*.modal-header .title{*/
+/*    font-size: 1.25rem;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.modal-header .close-button{*/
+/*    cursor: pointer;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    background: none;*/
+/*    font-size: 1.25rem;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.modal-body{*/
+/*    padding: 10px 15px;*/
+/*}*/
+
+/*#overlay{*/
+/*    position: fixed;*/
+/*    opacity: 0;*/
+/*    transition: 200ms ease-in-out;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    background-color: rgba(0, 0, 0, 0.9);*/
+/*    pointer-events: none;*/
+/*    !*padding: 1000px 1000px;*!*/
+/*    width: 100%;*/
+/*}*/
+
+/*#overlay.active{*/
+
+/*    opacity: 1;*/
+/*    pointer-events: all;*/
+/*}*/
+
+/*end of first modal attempt*/
+
+/*start of second modal attempt*/
+
+
+  .for_popup {
+  display: inline-block;
+  background: #fff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.box-modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.box-modal .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0;
+  transition: opacity 1.3s;
+}
+
+.box-modal .body-modal {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.box-modal .inner-body-modal {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 65px 0 rgba(0, 0, 0, 0.43);
+}
+
+.box-modal.modal-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    transition: all 0.9s;
+}
+
+  .box-modal .overlay {
+    opacity: 0.5;
+    transition: opacity 1.3s;
+  }
+
+  .box-modal .body-modal {
+    max-height: 1000px;
+    opacity: 1;
+    transition: 0.3s max-height 0.8s, 0.3s opacity 0.6s;
+  }
+
+
